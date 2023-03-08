@@ -42,6 +42,9 @@ public class MainPage {
    @FindBy(xpath = "//p[.='How are you?']")
     public WebElement message;
 
+    @FindBy(xpath = "//a[@href='/web#menu_id=388&action=']")
+    public WebElement expenseModule;
+
 
 
 

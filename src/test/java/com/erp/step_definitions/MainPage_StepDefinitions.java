@@ -1,8 +1,7 @@
 package com.erp.step_definitions;
 
-import com.erp.pages.LoginPage;
+import com.erp.pages.BasePage;
 import com.erp.pages.MainPage;
-import com.erp.utilities.BrowserUtils;
 import com.erp.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -12,7 +11,7 @@ import org.junit.Assert;
 
 public class MainPage_StepDefinitions {
 
-    LoginPage loginPage=new LoginPage();
+    BasePage loginPage=new BasePage();
     MainPage mainPage=new MainPage();
 
 
