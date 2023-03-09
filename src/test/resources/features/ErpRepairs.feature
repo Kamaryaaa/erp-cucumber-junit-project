@@ -2,7 +2,7 @@ Feature: ERP repair module
 
   Background:
     Given user is already on the main page
-
+@repairModule
     Scenario: Verify Repairs Module
       When user clicks repairs module
       And user clicks first checkbox

@@ -118,4 +118,19 @@ public class BrowserUtils {
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    public static List<String> getTexts(List<WebElement> elements) {
+
+        List<String> result=new ArrayList<>();
+
+        for (WebElement element : elements) {
+
+            String eachText = element.getText();
+            result.add(eachText);
+
+        }
+
+        return result;
+
+    }
+
 }

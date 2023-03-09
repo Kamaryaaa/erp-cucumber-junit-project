@@ -48,6 +48,9 @@ public class MainPage {
     @FindBy(xpath = "//a[@href='/web#menu_id=194&action=220']")
     public WebElement notesModule;
 
+    @FindBy(partialLinkText = "Repairs")
+    public WebElement repairsModule;
+
 
 
 
