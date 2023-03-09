@@ -45,6 +45,9 @@ public class MainPage {
     @FindBy(xpath = "//a[@href='/web#menu_id=388&action=']")
     public WebElement expenseModule;
 
+    @FindBy(xpath = "//a[@href='/web#menu_id=194&action=220']")
+    public WebElement notesModule;
+
 
 
 
