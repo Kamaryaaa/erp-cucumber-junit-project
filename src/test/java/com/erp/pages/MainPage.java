@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class MainPage {
     public MainPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -51,6 +53,21 @@ public class MainPage {
     @FindBy(partialLinkText = "Repairs")
     public WebElement repairsModule;
 
+    @FindBy(partialLinkText = "Calendar")
+    public WebElement calendarModule;
+
+    @FindBy(partialLinkText = "Sales")
+    public WebElement salesModule;
+
+    @FindBy(partialLinkText = "Documentation")
+    public WebElement documentationLink;
+
+    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li/a/span")
+    public List<WebElement> modules;
+
+
+
+    }
 
 
 
@@ -67,4 +84,5 @@ public class MainPage {
 
 
 
-}
+
+

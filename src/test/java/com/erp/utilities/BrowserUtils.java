@@ -133,4 +133,9 @@ public class BrowserUtils {
 
     }
 
+    public static WebElement waitForClickablility(WebElement element, int time) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
 }
