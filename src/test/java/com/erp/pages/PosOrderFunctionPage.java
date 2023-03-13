@@ -4,10 +4,15 @@ import com.erp.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class PosOrderFunctionPage extends BasePage {
+public class PosOrderFunctionPage {
+
+    public PosOrderFunctionPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
 
 
     @FindBy(xpath = "//a[@data-menu-xmlid='point_of_sale.menu_point_root']")

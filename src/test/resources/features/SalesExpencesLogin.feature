@@ -2,8 +2,10 @@ Feature: Sales and Expenses managers login function
   Agile Story: As sales and expense manager, I want to Login with valid credentials and get my account name.
 
 
-  @TC124
+  @SalesExpencesLogin
   Scenario Outline: Verify managers login with valid credentials and get their account names.
+    Given user is on the ERP login page
+
     When Users login with their "<email>" and "<password>"
     Then Users see the correct "<account holder name>"
     Examples:

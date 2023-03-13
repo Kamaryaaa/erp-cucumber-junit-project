@@ -1,6 +1,7 @@
 package com.erp.step_definitions;
 
 import com.erp.pages.MainPage;
+import com.erp.utilities.BrowserUtils;
 import com.erp.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,8 +22,8 @@ public class Documentation_StepDefinitions {
     }
     @Then("user navigated to documentation page")
     public void user_navigated_to_documentation_page() {
-        String windowHandle = Driver.getDriver().getWindowHandle();
-        Driver.getDriver().switchTo().window(windowHandle);
+        BrowserUtils.switchWindowAndVerify("https://www.odoo.com/documentation/16.0/","Odoo Documentation — Odoo 16.0 documentation");
+
     }
 
 

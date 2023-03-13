@@ -3,6 +3,8 @@ package com.erp.step_definitions;
 import com.erp.pages.BasePage;
 import com.erp.pages.PosOrderFunctionPage;
 import com.erp.utilities.BrowserUtils;
+import com.erp.utilities.ConfigurationReader;
+import com.erp.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,10 +18,6 @@ public class PosOrderFunction_StepDefinitions extends BasePage {
 
     PosOrderFunctionPage page = new PosOrderFunctionPage();
 
-    @When("user logged in as POS manager")
-    public void userLoggedInAsPOSManager() {
-        login("posmanager19@info.com","posmanager");
-    }
 
     @And("user clicks on Point of Sale")
     public void userClicksOnPointOfSale() {

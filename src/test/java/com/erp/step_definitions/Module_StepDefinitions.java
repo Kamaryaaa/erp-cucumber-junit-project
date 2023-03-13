@@ -13,8 +13,7 @@ public class Module_StepDefinitions {
     @Then("user clicks every module")
     public void user_clicks_every_module() {
         for(WebElement eachModule : mainPage.modules){
-            BrowserUtils.waitForVisibility(eachModule,2);
-            eachModule.click();
+            BrowserUtils.waitForClickablility(eachModule,5);
             Assert.assertTrue(eachModule.isDisplayed());
         }
     }

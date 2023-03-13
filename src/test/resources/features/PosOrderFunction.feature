@@ -2,7 +2,7 @@ Feature: POS order view function
   Agile Story: As a Point of Sale manager (POS), I should be able to view product order.
 
   Background: For all scenarios
-    When user logged in as POS manager
+    Given user is already on the main page
     And user clicks on Point of Sale
     Then user clicks on orders
     Then user clicks Order Ref checkbox
